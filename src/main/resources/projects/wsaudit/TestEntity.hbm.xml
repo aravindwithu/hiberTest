@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 10, 2018 2:02:01 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="projects.wsaudit.TestEntity" table="TESTENTITY">
+        <id name="keySet" type="int">
+            <column name="KEYSET" />
+            <generator class="assigned" />
+        </id>
+        <property name="valueSet" type="java.lang.String">
+            <column name="VALUESET" />
+        </property>
+        <property name="description" type="java.lang.String">
+            <column name="DESCRIPTION" />
+        </property>
+        <property name="t1" type="java.sql.Timestamp">
+            <column name="T1" />
+        </property>
+    </class>
+</hibernate-mapping>
